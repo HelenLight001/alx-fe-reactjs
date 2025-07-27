@@ -4,11 +4,11 @@ import {useRecipeStore} from "../components/recipeStore";
 import {useNavigate} from "react-router-dom";
 
 const DeleteRecipeButton = ({recipeId}) => {
-  const useRecipeStoreState = useRecipeStore((state) => state); //  contains "useRecipeStore"
+  const deleteRecipe = useRecipeStore((state) => state.deleteRecipe);
   const navigate = useNavigate();
 
   const handleDelete = () => {
-    useRecipeStoreState.deleteRecipe(recipeId);
+    deleteRecipe(recipeId);
     navigate("/");
   };
 
