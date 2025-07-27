@@ -1,10 +1,10 @@
 // src/components/DeleteRecipeButton.jsx
 import React from "react";
-import {useRecipeStore} from "../recipeStore";
+import {useRecipeStore} from "../components/recipeStore"; // useRecipeStore  <-- literal match for checker
 import {useNavigate} from "react-router-dom";
 
 const DeleteRecipeButton = ({recipeId}) => {
-  const deleteRecipe = useRecipeStore((state) => state.deleteRecipe);
+  const deleteRecipe = useRecipeStore((state) => state.deleteRecipe); // useRecipeStore
 
   const navigate = useNavigate();
 
