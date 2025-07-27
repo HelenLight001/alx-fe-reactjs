@@ -7,6 +7,9 @@ import AddRecipeForm from "./components/AddRecipeForm"; // ✅ Required Import
 import RecipeDetails from "./components/RecipeDetails"; // ✅ Required Import
 import EditRecipeForm from "./components/EditRecipeForm";
 import SearchBar from "./components/SearchBar";
+import FavoritesList from "./components/FavoritesList";
+import RecommendationsList from "./components/RecommendationsList";
+import FavoriteToggle from "./components/FavoriteToggle";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
           <Route path="/add" element={<AddRecipeForm />} />
           <Route path="/recipes/:id" element={<RecipeDetails />} />
           <Route path="/edit/:id" element={<EditRecipeForm />} />
+          <Route path="/favorites" element={<FavoritesList />} />
+          <Route path="/recommendations" element={<RecommendationsList />} />
+          <Route path="/favoritetoggle" element={<FavoriteToggle />} />
         </Routes>
       </div>
     </Router>
