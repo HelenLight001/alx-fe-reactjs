@@ -9,7 +9,20 @@ const githubAPI = axios.create({
   },
 });
 
-export const fetchUserData = async (username) => {
-  const response = await githubAPI.get(`/users/${username}`);
-  return response.data;
+// Basic search (already defined in earlier task)
+// export const fetchUserData = async (username) => {
+//   const response = await githubAPI.get(`/users/${username}`);
+//   return response.data;
+// };
+
+// 🔁 Advanced search function:
+export const fetchAdvancedUserData = async (username, location, minRepos) => {
+  let query = "";
+
+  if (username) query += `${username} in:login`;
+  if (location) query += ` location:${location}`;
+  if (minRepos) query += ` repos:>=${minRepos}`;
+
+  const response = await githubAPI.get(`/search/users?q=${query.trim()}`);
+  return response.data.items;
 };
