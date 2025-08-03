@@ -44,8 +44,9 @@ function Search() {
       <div className="mt-4">
         {loading && <p className="text-blue-500">Loading...</p>}
         {error && (
-          <p className="text-red-500">Looks like we can't find the user.</p>
+          <p className="text-red-500">Looks like we cant find the user</p>
         )}
+
         {user && (
           <div className="mt-4 flex items-center gap-4">
             <img
