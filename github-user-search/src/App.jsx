@@ -1,13 +1,11 @@
-import {useState} from "react";
-import "./App.css";
+import Search from "./components/Search";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-3xl font-bold text-center">GitHub User Search App</h1>
+    <div className="min-h-screen bg-gray-100 flex justify-center items-start pt-20">
+      <Search />
     </div>
   );
 }
+
 export default App;
