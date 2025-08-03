@@ -1,10 +1,14 @@
+import {useState} from "react";
+import RepoList from "./components/RepoList";
+import "./App.css";
 import Search from "./components/Search";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-start pt-20">
+    <>
+      <RepoList />
       <Search />
-    </div>
+    </>
   );
 }
 
