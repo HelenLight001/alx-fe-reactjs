@@ -3,7 +3,7 @@ function UserProfile() {
   return (
     <div className="bg-gray-100 md:p-8 sm:p-4 max-w-xs, md:max-w-sm mx-auto my-20 rounded-lg shadow-lg hover:shadow-xl ">
       <img
-        src="https://via.placeholder.com/150 "
+        src="https://i.postimg.cc/44vJNzMz/Whats-App-Image-2024-11-02-at-10-28-28-PM.jpg "
         alt="User"
         className="rounded-full sm:w-24 sm:h-24 md:h-36 mx-auto md:w-36 hover:scale-110 transition-transform duration-300 ease-in-out "
       />
