@@ -1,9 +1,9 @@
+import HomePage from "./components/HomePage";
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-900">
-        Recipe Sharing Platform 🚀
-      </h1>
+    <div className="bg-gray-100 min-h-screen">
+      <HomePage />
     </div>
   );
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://plus.unsplash.com/premium_photo-1691948106030-d5e76d461b14?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8U3BhZ2hldHRpJTIwQ2FyYm9uYXJhfGVufDB8fDB8fHww"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "https://plus.unsplash.com/premium_photo-1670191894591-bc501a33de0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2hpY2tlbiUyMFRpa2thJTIwTWFzYWxhfGVufDB8fDB8fHww"
+  },
+  {
+    "id": 3,
+    "title": "Avocado Toast",
+    "summary": "Crispy toasted bread topped with smashed avocado, salt, pepper, and a drizzle of olive oil.",
+    "image": "https://images.unsplash.com/photo-1603046891726-36bfd957e0bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QXZvY2FkbyUyMFRvYXN0fGVufDB8fDB8fHww"
+  },
+  {
+    "id": 4,
+    "title": "Chicken Curry",
+    "summary": "A flavorful dish made with tender chicken pieces simmered in a spicy curry sauce.",
+    "image": "https://images.unsplash.com/photo-1631292784640-2b24be784d5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpY2tlbiUyMEN1cnJ5fGVufDB8fDB8fHww"
+  },
+  {
+    "id": 5,
+    "title": "Chocolate Cake",
+    "summary": "Rich and moist chocolate cake topped with creamy chocolate frosting.",
+    "image": "https://images.unsplash.com/photo-1602351447937-745cb720612f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fENob2NvbGF0ZSUyMENha2V8ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    "id": 6,
+    "title": "ice-cream",
+    "summary": "A sweet, frozen dessert made from dairy or non-dairy ingredients, often flavored and served in scoops or cones.",
+    "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aWNlJTIwY3JlYW18ZW58MHx8MHx8fDA%3D"
+  }
+]
