@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="bg-green-600 text-white shadow-md">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
         <Link to="/" className="text-2xl font-bold">
-          🍴 FlavorFusion
+          🍴 DishCircle
         </Link>
         <div className="space-x-4">
           <Link to="/" className="hover:text-yellow-300">

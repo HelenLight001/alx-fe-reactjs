@@ -43,7 +43,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="text-sm">
-          &copy; 2025 🍴 FlavorFusion. All rights reserved.
+          &copy; 2025 🍴 DishCircle. All rights reserved.
         </p>
       </div>
     </footer>
