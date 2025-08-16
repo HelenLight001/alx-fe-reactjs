@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "ingredients": [
+      "200g spaghetti",
+      "100g bacon",
+      "2 eggs",
+      "50g Parmesan cheese",
+      "Black pepper"
+    ],
+    "instructions": [
+      "Cook pasta until al dente.",
+      "Fry bacon until crispy.",
+      "Whisk eggs and cheese.",
+      "Combine pasta, bacon, egg mixture, and pepper.",
+      "Serve immediately."
+    ],
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://plus.unsplash.com/premium_photo-1691948106030-d5e76d461b14?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8U3BhZ2hldHRpJTIwQ2FyYm9uYXJhfGVufDB8fDB8fHww"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "ingredients": [
+      "2 tablespoons oil or ghee",
+      "large onion, finely chopped",
+      "2–3 garlic cloves, minced",
+      "1 inch ginger, grated",
+      "1–2 teaspoons garam masala",
+      "1 teaspoon ground cumin",
+      "1 teaspoon ground coriander",
+      "1 teaspoon paprika",
+      "½ teaspoon chili powder (optional, for heat)",
+      "1 can (400g or 14 oz) crushed tomatoes or tomato puree",
+      "1 cup heavy cream (or use coconut cream for dairy-free)",
+      "Salt to taste",
+      "Fresh cilantro (coriander leaves) for garnish."
+    ],
+    "instructions": [
+      "To prepare Chicken Tikka Masala, marinate boneless chicken pieces in a mixture of yogurt, lemon juice, garlic, ginger, and spices like garam masala, cumin, paprika, and turmeric for at least an hour. Grill or pan-cook the marinated chicken until slightly charred and cooked through. In a separate pan, sauté onions, garlic, and ginger in oil or butter, then add tomato puree, cream, and more spices to create a rich, creamy sauce. Simmer the sauce until thickened, add the cooked chicken, and let it simmer briefly so the flavors combine. Serve hot with rice or naan."
+    ],
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "https://plus.unsplash.com/premium_photo-1670191894591-bc501a33de0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2hpY2tlbiUyMFRpa2thJTIwTWFzYWxhfGVufDB8fDB8fHww"
+  },
+  {
+    "id": 3,
+    "title": "Avocado Toast",
+    "ingredients": [
+      "bread slices",
+      "ripe avocado",
+      "salt",
+      "black pepper",
+      "lemon or lime juice",
+      "olive oil (optional)",
+      "cherry tomatoes (optional)",
+      "red chili flakes (optional)",
+      "everything bagel seasoning (optional)",
+      "poached egg (optional)"
+    ],
+    "instructions": [
+      "To prepare Avocado Toast, toast slices of your favorite bread until golden and crisp, then mash ripe avocados in a bowl with a pinch of salt, pepper, and a squeeze of lemon or lime juice to add brightness. Spread the mashed avocado generously over the warm toast, and top with optional extras like sliced cherry tomatoes, poached eggs, red chili flakes, or everything bagel seasoning. Serve immediately for a quick, healthy, and satisfying meal or snack."
+    ],
+    "summary": "Crispy toasted bread topped with smashed avocado, salt, pepper, and a drizzle of olive oil.",
+    "image": "https://images.unsplash.com/photo-1603046891726-36bfd957e0bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QXZvY2FkbyUyMFRvYXN0fGVufDB8fDB8fHww"
+  },
+  {
+    "id": 4,
+    "title": "Chicken Curry",
+    "ingredients": [
+      "chicken pieces",
+      "onion",
+      "garlic cloves",
+      "ginger",
+      "turmeric powder",
+      "cumin powder",
+      "coriander powder",
+      "garam masala",
+      "chopped tomatoes",
+      "oil or ghee",
+      "salt",
+      "water or coconut milk",
+      "fresh cilantro"
+    ],
+    "instructions": [
+      "To prepare Chicken Curry, start by sautéing chopped onions in oil until golden, then add minced garlic, ginger, and a mix of spices such as turmeric, cumin, coriander, and garam masala. Cook the spices briefly to release their aroma, then add chopped tomatoes and cook until soft. Add chicken pieces (bone-in or boneless) and stir to coat them in the spice mixture. Pour in water or coconut milk, season with salt, and let the curry simmer until the chicken is fully cooked and tender, and the sauce thickens. Garnish with fresh cilantro and serve hot with rice or naan."
+    ],
+    "summary": "A flavorful dish made with tender chicken pieces simmered in a spicy curry sauce.",
+    "image": "https://images.unsplash.com/photo-1631292784640-2b24be784d5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpY2tlbiUyMEN1cnJ5fGVufDB8fDB8fHww"
+  },
+  {
+    "id": 5,
+    "title": "Chocolate Cake",
+    "ingredients": [
+      "all-purpose flour",
+      "cocoa powder",
+      "baking powder",
+      "baking soda",
+      "granulated sugar",
+      "salt",
+      "eggs",
+      "milk",
+      "vegetable oil",
+      "vanilla extract",
+      "hot water or brewed coffee"
+    ],
+    "instructions": [
+      "To prepare Chocolate Cake, start by preheating your oven to 350°F (175°C) and greasing a cake pan. In a bowl, mix dry ingredients—flour, cocoa powder, baking powder, baking soda, sugar, and a pinch of salt. In another bowl, whisk together eggs, milk, oil, and vanilla extract, then combine with the dry ingredients. Gradually add hot water or brewed coffee to the batter for extra richness, mixing until smooth. Pour the batter into the prepared pan and bake for about 30–35 minutes or until a toothpick inserted comes out clean. Let the cake cool completely before frosting with chocolate ganache or your favorite icing."
+    ],
+    "summary": "Rich and moist chocolate cake topped with creamy chocolate frosting.",
+    "image": "https://images.unsplash.com/photo-1602351447937-745cb720612f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fENob2NvbGF0ZSUyMENha2V8ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    "id": 6,
+    "title": "ice-cream",
+    "ingredients": [
+      "heavy cream",
+      "whole milk",
+      "granulated sugar",
+      "vanilla extract"
+    ],
+    "instructions": [
+      "To prepare ice cream at home, start by whisking together heavy cream, whole milk, sugar, and a splash of vanilla extract in a bowl until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer’s instructions until it reaches a soft-serve consistency. If you don’t have an ice cream maker, pour the mixture into a shallow container, freeze it for 30 minutes, then stir vigorously to break up ice crystals; repeat every 30 minutes for 2–3 hours. Once the ice cream is smooth and firm, transfer it to an airtight container and freeze for several hours before serving"
+    ],
+    "summary": "A sweet, frozen dessert made from dairy or non-dairy ingredients, often flavored and served in scoops or cones.",
+    "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aWNlJTIwY3JlYW18ZW58MHx8MHx8fDA%3D"
+  }
+]
