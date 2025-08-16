@@ -43,6 +43,12 @@ function HomePage() {
                 View Recipe →
               </Link>
             </div>
+            <Link
+              to="/add-recipe"
+              className="text-blue-500 hover:underline ml-4"
+            >
+              Add New Recipe →
+            </Link>
           </div>
         ))}
       </div>
