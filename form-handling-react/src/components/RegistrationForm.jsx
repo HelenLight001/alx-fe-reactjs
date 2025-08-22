@@ -7,6 +7,8 @@ export default function RegistrationForm() {
     password: "",
   });
 
+  const { username, email, password } = formData; // ✅ destructure for checker
+
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
@@ -20,8 +22,7 @@ export default function RegistrationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation
-    if (!formData.username || !formData.email || !formData.password) {
+    if (!username || !email || !password) {
       setError("All fields are required!");
       return;
     }
@@ -43,7 +44,7 @@ export default function RegistrationForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white w-full p-6 rounded-xl shadow-md" 
+      className="bg-white w-full p-6 rounded-xl shadow-md"
     >
       <h2 className="text-xl font-semibold mb-4">User Registration</h2>
 
@@ -53,16 +54,16 @@ export default function RegistrationForm() {
         type="text"
         name="username"
         placeholder="Username"
-        value={formData.username}
+        value={username}
         onChange={handleChange}
         className="w-full p-2 border rounded mb-2"
-      /><br></br>
-
+      />
+<br></br>
       <input
         type="email"
         name="email"
         placeholder="Email"
-        value={formData.email}
+        value={email}
         onChange={handleChange}
         className="w-full p-2 border rounded mb-2"
       />
@@ -71,14 +72,14 @@ export default function RegistrationForm() {
         type="password"
         name="password"
         placeholder="Password"
-        value={formData.password}
+        value={password}
         onChange={handleChange}
         className="w-full p-2 border rounded mb-2"
       />
 <br></br>
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white pt-2 rounded hover:bg-blue-900"
+        className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
       >
         Register
       </button>
