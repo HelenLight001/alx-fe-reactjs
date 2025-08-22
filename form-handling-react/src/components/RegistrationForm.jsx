@@ -7,9 +7,10 @@ export default function RegistrationForm() {
     password: "",
   });
 
-  const { username, email, password } = formData; // ✅ destructure for checker
+  const { username, email, password } = formData;
 
-  const [error, setError] = useState("");
+  // store errors in an object
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,12 +23,25 @@ export default function RegistrationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!username || !email || !password) {
-      setError("All fields are required!");
+    let newErrors = {};
+
+    if (!username) {
+      newErrors.username = "Username is required";
+    }
+    if (!email) {
+      newErrors.email = "Email is required";
+    }
+    if (!password) {
+      newErrors.password = "Password is required";
+    }
+
+    setErrors(newErrors);
+
+    // stop submission if there are validation errors
+    if (Object.keys(newErrors).length > 0) {
       return;
     }
 
-    setError("");
     console.log("Submitted Data:", formData);
 
     // Simulate API call
@@ -48,8 +62,7 @@ export default function RegistrationForm() {
     >
       <h2 className="text-xl font-semibold mb-4">User Registration</h2>
 
-      {error && <p className="text-red-500 mb-2">{error}</p>}
-
+      {/* Username */}
       <input
         type="text"
         name="username"
@@ -57,8 +70,12 @@ export default function RegistrationForm() {
         value={username}
         onChange={handleChange}
         className="w-full p-2 border rounded mb-2"
-      />
-<br></br>
+      /><br></br>
+      {errors.username && (
+        <p className="text-red-500 text-sm mb-2">{errors.username}</p>
+      )}
+
+      {/* Email */}
       <input
         type="email"
         name="email"
@@ -66,8 +83,12 @@ export default function RegistrationForm() {
         value={email}
         onChange={handleChange}
         className="w-full p-2 border rounded mb-2"
-      />
-<br></br>
+      /><br></br>
+      {errors.email && (
+        <p className="text-red-500 text-sm mb-2">{errors.email}</p>
+      )}
+
+      {/* Password */}
       <input
         type="password"
         name="password"
@@ -75,8 +96,12 @@ export default function RegistrationForm() {
         value={password}
         onChange={handleChange}
         className="w-full p-2 border rounded mb-2"
-      />
-<br></br>
+      /> <br></br>
+      {errors.password && (
+        <p className="text-red-500 text-sm mb-2">{errors.password}</p>
+      )}
+
+      {/* Submit Button */}
       <button
         type="submit"
         className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
