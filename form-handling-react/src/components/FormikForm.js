@@ -1,93 +1,82 @@
+import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-const validationSchema = Yup.object({
-  username: Yup.string().required("Username is required"),
-  email: Yup.string().email("Invalid email format").required("Email is required"),
-  password: Yup.string().min(6, "Password must be at least 6 characters").required("Password is required"),
-});
-
 export default function FormikForm() {
-  const initialValues = { username: "", email: "", password: "" };
-
-  const handleSubmit = (values, { setSubmitting, resetForm }) => {
-    console.log("Formik Submitted:", values);
-
-    // Simulate API call
-    fetch("https://jsonplaceholder.typicode.com/users", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
-    })
-      .then((res) => res.json())
-      .then((data) => console.log("API Response:", data))
-      .catch((err) => console.error("Error:", err))
-      .finally(() => setSubmitting(false));
-
-    resetForm();
-  };
+  // Validation schema with Yup
+  const validationSchema = Yup.object({
+    username: Yup.string().required("Username is required"),
+    email: Yup.string().email("Invalid email address").required("Email is required"),
+    password: Yup.string().min(6, "Password must be at least 6 characters").required("Password is required"),
+  });
 
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={handleSubmit}
-    >
-      {({ isSubmitting }) => (
-        <Form className="bg-white w-full p-6 rounded-xl shadow-md ">
-          <h2 className="text-xl font-semibold mb-4">Formik Registration</h2>
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-6">
+        <h2 className="text-2xl font-bold text-center mb-6">Formik Registration</h2>
 
-          <div className="mb-2">
-            <Field
-              type="text"
-              name="username"
-              placeholder="Username"
-              className="w-full p-2 border rounded"
-            />
-            <ErrorMessage
-              name="username"
-              component="p"
-              className="text-red-500 text-sm"
-            />
-          </div>
+        <Formik
+          initialValues={{ username: "", email: "", password: "" }}
+          validationSchema={validationSchema}
+          onSubmit={(values, { setSubmitting, resetForm }) => {
+            console.log("Form Data Submitted:", values);
+            setTimeout(() => {
+              setSubmitting(false);
+              resetForm();
+              alert("Registration Successful!");
+            }, 1000);
+          }}
+        >
+          {({ isSubmitting }) => (
+            <Form className="space-y-4">
+              {/* Username */}
+              <div>
+                <label className="block font-medium">Username</label>
+                <Field
+                  type="text"
+                  name="username"
+                  className="w-full border px-3 py-2 rounded mt-1"
+                  placeholder="Enter username"
+                />
+                <ErrorMessage name="username" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
 
-          <div className="mb-2">
-            <Field
-              type="email"
-              name="email"
-              placeholder="Email"
-              className="w-full p-2 border rounded"
-            />
-            <ErrorMessage
-              name="email"
-              component="p"
-              className="text-red-500 text-sm"
-            />
-          </div>
+              {/* Email */}
+              <div>
+                <label className="block font-medium">Email</label>
+                <Field
+                  type="email"
+                  name="email"
+                  className="w-full border px-3 py-2 rounded mt-1"
+                  placeholder="Enter email"
+                />
+                <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
 
-          <div className="mb-2">
-            <Field
-              type="password"
-              name="password"
-              placeholder="Password"
-              className="w-full p-2 border rounded"
-            />
-            <ErrorMessage
-              name="password"
-              component="p"
-              className="text-red-500 text-sm"
-            />
-          </div>
+              {/* Password */}
+              <div>
+                <label className="block font-medium">Password</label>
+                <Field
+                  type="password"
+                  name="password"
+                  className="w-full border px-3 py-2 rounded mt-1"
+                  placeholder="Enter password"
+                />
+                <ErrorMessage name="password" component="div" className="text-red-500 text-sm mt-1" />
+              </div>
 
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700"
-          >
-            {isSubmitting ? "Submitting..." : "Register"}
-          </button>
-        </Form>
-      )}
-    </Formik>
+              {/* Submit */}
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+              >
+                {isSubmitting ? "Submitting..." : "Register"}
+              </button>
+            </Form>
+          )}
+        </Formik>
+      </div>
+    </div>
   );
 }
